@@ -12,21 +12,72 @@
         <div class="w3-bar w3-indigo">
             <a href="/index.html" class="w3-bar-item w3-button">Home</a>
             <a href="/about.html" class="w3-bar-item w3-button">About Me</a>
+            <a href="/goals.html" class="w3-bar-item w3-button">My Goals</a>
             <a href="/projects.html" class="w3-bar-item w3-button">Projects</a>
         </div>
         <header class="w3-container w3-grey">
             <h2>My Projects</h2>
         </header>
         <article class="w3-container w3-light-grey">
-            <p>Here are some of the projects I have undertaken:</p>
-            <ul>
-                <li>Test rig for Hyperloop Pod levitation device (underway)</li>
-                <li>3D Environment Scanner (underway)</li>
-                <li>Contributing to the Godot Game Engine (underway)</li>
-                <li>Contributed to recipe search website (front-end and back-end) (team project for ECE444 Software Engineering Course) (completed: <a href="https://ancient-earth-81883.herokuapp.com/">https://ancient-earth-81883.herokuapp.com/</a>)</li>
-                <li>Arduino and Unity integration code for Electronic Drum Kit (this part completed)</li>
-                <li>PC build (completed)</li>
-            </ul>
+            <p>Here are some of the projects I have undertaken.</p>
+        </article>
+        <article class="w3-container w3-light-blue">
+            <h2>Hyperloop Pod Test Rig</h2>
+            <p><b>Status: </b>Completed</p>
+            <div class="w3-container w3-cell w3-mobile">
+                <img src="capstone_design.jpg" class="w3-round">
+            </div>
+            <div class="w3-container w3-cell w3-mobile">
+                <p>My capstone project in my final year of university was to design a test rig to evaluate the feasibility of a new levitation technology invented by the University of Toronto Hyperloop Team.</p>
+                <p>I was the project manager for my team, and as such, I laid out a schedule for tem members to complete their individual contributions.</p>
+                <p>My most interesting contribution to the design was a robot which would move a magnetic field sensor. For this, I hooked up an Arduino to a Raspberry Pi, and programmed the control system for this.</p>
+                <p>The attached image is of the wiring of the Arduino to two stepper motors as part of my prototyping.</p>
+                <p>From my experience being a project manager for my team, I have learned how to manage multiple people's schedules in a way that minimizes conflict and ensures that assigned tasks are completed.</p>
+                <p>This project has also solidified my knowledge of Arduino programming and wiring as well as serial communications between Arduino and Raspberry Pi.</p>
+            </div>
+        </article>
+        <article class="w3-container w3-light-grey">
+            <h2>Recipe Database</h2>
+            <p><b>Status: </b>Completed</p>
+            <div class="w3-container w3-cell w3-mobile">
+                <img src="recipe_titlepage.jpg" class="w3-round">
+            </div>
+            <div class="w3-container w3-cell w3-mobile">
+                <p>As part of my software engineering course, we had a group project that tasked us with designing a website that would allow users to search for recipes based on the ingredients they have on hand.</p>
+                <p>I was responsible for meshing the front-end and back-end, however I ended up creating many front-end features and back-end functionalities.</p>
+                <p>The website was created using Python with the Flask microframework. We also used SQLAlchemy library for easier database manipulation. I implemented the functionality enabling users to add new ingredients and recipes, as well as the ability to view recipes.</p>
+                <p>I also implemented a unit conversion so that users may read ingredient quantities in their units of choice.</p>
+                <p>I helped implement the functionality that allows users to have a list of ingredients they have on hand and to search for recipes based on these ingredients.</p>
+                <p>This project has also taught me how to better work in a team on a medium sized project.</p>
+                <p>The image below shows a sample of what a user's ingredient list may look like. The website is accessible <a href="https://ancient-earth-81883.herokuapp.com/">here</a>.</p>
+            </div>
+            <div class="w3-container w3-cell w3-mobile">
+                <img src="recipe_list.jpg" class="w3-round">
+            </div>
+        </article>
+        <article class="w3-container w3-light-blue">
+            <h2>Electronic Drum Kit</h2>
+            <p><b>Status: </b>Completed</p>
+            <p>This project spearheaded by the University of Toronto Project Holodeck design team intends to create a working arcade drum kit</p>
+            <p>As part of this project, I helped interface an Arduino connected to four metal plates and two conductive rods to Unity for the latter to register which rod has hit which plate</p>
+            <p>I also contributed to working on parsing the drum track from MIDI files into Unity as input for the rhythm game that the arcade will run</p>
+            <p>I have completed all my assigned sections for this project before it was halted due to the COVID-19 pandemic.</p>
+            <p>This was my first in-depth experience working with Arduino.</p>
+        </article>
+        <article class="w3-container w3-light-grey">
+            <h2>3D Environment Room Scanner</h2>
+            <p><b>Status: </b>In Progress</p>
+            <div class="w3-container w3-cell w3-mobile">
+                <img src="room_scanner.jpg" class="w3-round">
+            </div>
+            <div class="w3-container w3-cell w3-mobile">
+                <p>This is another project spearheaded by the University of Toronto Project Holodeck design team.</p>
+                <p>The aim of this project is to create a platform allowing the real-time scanning of an environment into a virtual 3D representation</p>
+                <p>The completed project will be able to use an HTC Vive controller paired with a LiDAR and a 360 camera to then recreate the environment in Unity</p>
+                <p>I have helped come up with coordinate transformation functions to map the LiDAR readings into a centralized coordinate system</p>
+                <p>We are currently able to generate a point cloud, however the coordinate transformations still need tweaking.</p>
+                <p>This project has been put on hold due to the COVID-19 pandemic.</p>
+            </div>
         </article>
     </body>
 </html>
